@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-image: url("https://unsplash.it/600/400");
+    transition: transform 1s, color 1s 1s; 
+}
+
+.hero-bcg {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0,.4);
+}
+
+.hero-text {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 400px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+}
+
+.hero-image:hover {
+    transform: translate(-50%, -50%) rotate(-360deg);
+    color: gold;
+}
